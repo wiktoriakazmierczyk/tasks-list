@@ -15,3 +15,15 @@
     padding: 8px;
     margin: 10px;
 }
+
+.form__fieldset--list {
+/* background-image: url(../images/bin.png); */
+}
+
+.list__item {
+
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista zadań</title>
-
+    <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,27 +21,27 @@
 <body class="body">
     <h1>Lista zadań</h1>
 
-    <form class="form">
+    <form class="form js-form">
         <fieldset class="form__fieldset">
             <h3 class="subheader">Dodaj nowe zadanie</h3>
         </fieldset>
 
         <fieldset class="form__fieldset">
             <label>
-                <input class="form__fieldset--input" name="zadanie" value="Co jest do zrobienia?">
+                <input class="form__fieldset--input js-newTask" value="Co jest do zrobienia?" readonly>
                 <button class="button js-button">Dodaj zadanie</button>
             </label>
         </fieldset>
 
     </form>
 
-    <form class="form">
+    <form class="form js-form">
         <fieldset class="form__fieldset">
             <h3 class="subheader">Lista zadań</h3>
         </fieldset>
         <fieldset class="form__fieldset">
             <label>
-                
+                <ul class="form__fieldset--list js-tasks"></ul>
             </label>
         </fieldset>
     </form>
