@@ -3,6 +3,6 @@
     color: white;
     font-size: 15px;
     padding: 10px;
-    border: #0f6363;
-    
+    border: #0f6363; 
+    transition: 0.3s;
 }
