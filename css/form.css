@@ -1,0 +1,17 @@
+.form {
+    padding-bottom: 10px;
+}
+
+.form__fieldset {
+    background-color: white;
+    border: solid 0.2px #e6e6e6;
+    box-shadow: 5px;
+}
+
+.form__fieldset--input {
+    border: solid 2px #e6e6e6;
+    font-size: 15px;
+    color: #888;
+    padding: 8px;
+    margin: 10px;
+}
