@@ -20,33 +20,30 @@
 </head>
 
 <body class="body">
-    <h1>Lista zadań</h1>
+    <main class="container">
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
 
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <h3 class="subheader">Dodaj nowe zadanie</h3>
-        </fieldset>
+        <section class="section">
+            <h3 class="section__header">Dodaj nowe zadanie</h3>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" autofocus>
+                    <button class="button js-button">Dodaj zadanie</button>
+                </form>
+            </div>
+        </section>
 
-        <fieldset class="form__fieldset">
-            <label>
-                <input class="form__fieldset--input js-newTask" placeholder="Co jest do zrobienia?">
-                <button class="button js-button">Dodaj zadanie</button>
-            </label>
-        </fieldset>
-
-    </form>
-
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <h3 class="subheader">Lista zadań</h3>
-        </fieldset>
-        <fieldset class="form__fieldset">
-            <label>
-                <ul class="form__fieldset--list js-tasks"></ul>
-            </label>
-        </fieldset>
-    </form>
-
+        <section class="section">
+            <h3 class="section__header">Lista zadań</h3>
+            <div class="section__body">
+                <form class="form js-form">
+                    <ul class="form__list js-tasks"></ul>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
