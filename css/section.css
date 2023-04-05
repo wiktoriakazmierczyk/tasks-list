@@ -1,5 +1,5 @@
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -14,4 +14,8 @@
     margin: 0;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+}
+
+.section__body {
+    padding: 20px;
 }

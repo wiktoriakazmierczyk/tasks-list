@@ -13,24 +13,40 @@
     border-bottom: 1px solid #ddd;
 }
 
-.tasks__button {
-    background-image: url(../images/check.png);
-}
- 
-.tasks__button--toggleDone {
-    background-image: url(../images/checked.png);
-}
-
 .tasks__content--done {
     text-decoration: line-through;
 }
 
-.removeButton {
+.tasks__button {
+    color: white;
     border: none;
     padding: 10px;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/delete.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    box-shadow: 2px 2px 5px #ddd;
+    transition: 0.3s;
+    height: 20px;
+    width: 20px;
+}
+
+.tasks__button--toggleDone {
+    background-color: hsl(103, 44%, 55%);
+}
+
+.tasks__button--toggleDone:hover {
+    background-color: hsl(103, 44%, 60%);
+}
+
+.tasks__button--toggleDone:active {
+    background-color: hsl(103, 44%, 65%);
+}
+
+.tasks__button--remove {
+    background-color: hsl(344, 93%, 47%);
+}
+
+.tasks__button--remove:hover {
+    background-color: hsl(344, 93%, 52%);
+}
+
+.tasks__button--remove:active {
+    background-color: hsl(344, 93%, 57%);
 }
