@@ -1,0 +1,17 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    box-shadow: 0 0 5px #ddd;
+    margin: 10px 0;
+}
+
+.section__header {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
