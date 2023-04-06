@@ -23,8 +23,8 @@
     padding: 10px;
     box-shadow: 2px 2px 5px #ddd;
     transition: 0.3s;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 
 .tasks__button--toggleDone {
