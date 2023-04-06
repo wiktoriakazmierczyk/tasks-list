@@ -40,13 +40,13 @@
 }
 
 .tasks__button--remove {
-    background-color: hsl(344, 93%, 47%);
+    background-color: hsl(344, 80%, 48%);
 }
 
 .tasks__button--remove:hover {
-    background-color: hsl(344, 93%, 52%);
+    background-color: hsl(344, 80%, 53%);
 }
 
 .tasks__button--remove:active {
-    background-color: hsl(344, 93%, 57%);
+    background-color: hsl(344, 80%, 58%);
 }
