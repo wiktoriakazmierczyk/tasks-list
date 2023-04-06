@@ -18,6 +18,9 @@
 }
 
 .tasks__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     border: none;
     padding: 10px;
