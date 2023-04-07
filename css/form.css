@@ -14,14 +14,14 @@
 .form__input {
     border: 2px solid #e6e6e6;
     font-size: 15px;
-    padding: 12px;
+    padding: 10px;
 }
 
 .form__button {
     background-color: hsl(180, 100%, 25%);
     color: white;
-    font-size: 15px;
     border: none;
+    font-size: 15px;
     padding: 12px;
     box-shadow: 2px 2px 5px #ddd;
     transition: 0.3s;
