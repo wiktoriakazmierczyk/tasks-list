@@ -25,7 +25,8 @@
     border: none;
     padding: 10px;
     box-shadow: 2px 2px 5px #ddd;
-    transition: 0.3s;
+    transition: 0.5s;
+    cursor: pointer;
     height: 15px;
     width: 15px;
 }

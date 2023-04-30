@@ -53,6 +53,7 @@
         });
     };
 
+
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
@@ -62,6 +63,7 @@
             });
         });
     };
+
 
     const bindButtonsEvents = () => {
         // Raz te przyciski są, a innym razem ich nie ma; gdy lista zadań jest pusta, przyciski się nie wyrenderują, więc:
@@ -106,12 +108,12 @@
         if (tasks.length !== 0) {
             HTMLButtonString += `
 
-        <button class=".js-toggleHideDoneTasks buttons">
+        <button class="js-toggleHideDoneTasks buttons">
           ${tasks.some(({ done }) => done) ? "" : "disabled"}
           ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
         </button>
 
-        <button class=".js-toggleAllTasksDone buttons">
+        <button class="js-toggleAllTasksDone buttons">
           ${tasks.every(({ done }) => done) ? "disabled" : ""} Ukończ wszystkie
         </button>     
             `;
@@ -119,7 +121,6 @@
 
         document.querySelector(".js-buttons").innerHTML = HTMLButtonString;
     };
-
 
 
     const render = () => {
@@ -144,6 +145,7 @@
         ));
     };
 
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
@@ -157,6 +159,7 @@
 
         newTaskElement.focus();
     };
+
 
     const init = () => {
         render();
