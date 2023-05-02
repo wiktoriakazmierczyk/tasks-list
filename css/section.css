@@ -15,8 +15,49 @@
     margin: 0;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+    
+    }
 }
 
 .section__body {
     padding: 20px;
+}
+
+.section__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border: none;
+    padding: 20px;
+    color: hsl(180, 100%, 25%);
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+.section__buttons:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__buttons:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__buttons:disabled {
+    color: gray;
+    cursor: auto;
 }

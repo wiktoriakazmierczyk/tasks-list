@@ -85,6 +85,7 @@
         let HTMLString = "";
 
         for (const task of tasks) {
+
             HTMLString += `
         <li class="tasks__item js-task"> 
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
@@ -106,15 +107,14 @@
         let HTMLButtonString = "";
 
         if (tasks.length !== 0) {
-            HTMLButtonString += `
 
-        <button class="js-toggleHideDoneTasks buttons">
-          ${tasks.some(({ done }) => done) ? "" : "disabled"}
+            HTMLButtonString += `
+        <button class="js-toggleHideDoneTasks section__buttons"
+          ${tasks.some(({ done }) => done) ? "" : "disabled"}>
           ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
         </button>
-
-        <button class="js-toggleAllTasksDone buttons">
-          ${tasks.every(({ done }) => done) ? "disabled" : ""} Ukończ wszystkie
+        <button class="js-toggleAllTasksDone section__buttons"
+          ${tasks.every(({ done }) => done) ? "disabled" : ""}> Ukończ wszystkie
         </button>     
             `;
         };
