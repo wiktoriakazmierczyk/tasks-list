@@ -17,11 +17,17 @@
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__title {
+    margin: 0;
 }
 
 @media (max-width: 767px) {
-    .section__header {
-    
+    .section__title {
+        padding-bottom: 20px;
     }
 }
 
@@ -32,9 +38,8 @@
 .section__buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    gap: 20px;
     border: none;
-    padding: 20px;
     color: hsl(180, 100%, 25%);
     background-color: transparent;
     transition: 0.5s;
@@ -45,7 +50,7 @@
     .section__buttons {
         flex-basis: 100%;
         justify-content: center;
-        padding: 10px;
+        gap: 20px;
     }
 }
 
