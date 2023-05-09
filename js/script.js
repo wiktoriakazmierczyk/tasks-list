@@ -1,17 +1,17 @@
 {
     let tasks = [
-        // {
-        //     content: "zrobić obiad",
-        //     done: false,
-        // },
-        // {
-        //     content: "przepisać notatki",
-        //     done: false,
-        // },
-        // {
-        //     content: "poćwiczyć na skrzypcach",
-        //     done: true,
-        // },
+        {
+            content: "zrobić obiad",
+            done: false,
+        },
+        {
+            content: "przepisać notatki",
+            done: false,
+        },
+        {
+            content: "poćwiczyć na skrzypcach",
+            done: true,
+        },
     ];
 
     let hideDoneTask = false;
@@ -73,10 +73,10 @@
             button_toggleHideDoneTasks.addEventListener("click", toggleHideDoneTasks);
         };
 
-        const button_toggleAllTasksDone = document.querySelector(".js-toggleAllTasksDone");
+        const button_markAllTasksDone = document.querySelector(".js-markAllTasksDone");
 
-        if (button_toggleAllTasksDone) {
-            button_toggleAllTasksDone.addEventListener("click", toggleAllTasksDone);
+        if (button_markAllTasksDone) {
+            button_markAllTasksDone.addEventListener("click", markAllTasksDone);
         };
     };
 
@@ -87,7 +87,7 @@
         for (const task of tasks) {
 
             HTMLString += `
-        <li class="tasks__item js-task"> 
+        <li class="tasks__item js-task${task.done && hideDoneTask ? " tasks__item--hidden " : ""}"> 
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✔" : ""}
         </button>
@@ -113,7 +113,7 @@
           ${tasks.some(({ done }) => done) ? "" : "disabled"}>
           ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
         </button>
-        <button class="js-toggleAllTasksDone section__buttons"
+        <button class="js-markAllTasksDone section__buttons"
           ${tasks.every(({ done }) => done) ? "disabled" : ""}> Ukończ wszystkie
         </button>     
             `;
@@ -139,10 +139,11 @@
         render();
     };
 
-    const toggleAllTasksDone = () => {
+    const markAllTasksDone = () => {
         tasks = tasks.map((task) => (
             { ...task, done: true }
         ));
+        render();
     };
 
 
