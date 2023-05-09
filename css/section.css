@@ -42,7 +42,7 @@
     border: none;
     color: hsl(180, 100%, 25%);
     background-color: transparent;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -63,6 +63,6 @@
 }
 
 .section__buttons:disabled {
-    color: gray;
+    color: #bbb;
     cursor: auto;
 }

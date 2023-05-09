@@ -13,6 +13,10 @@
     border-bottom: 1px solid #ddd;
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }
@@ -25,7 +29,7 @@
     border: none;
     padding: 10px;
     box-shadow: 2px 2px 5px #ddd;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
     height: 15px;
     width: 15px;
