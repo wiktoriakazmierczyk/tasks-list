@@ -1,4 +1,4 @@
-# Task list
+# Tasks list
 
 ![Task list sample](https://i.postimg.cc/d0C1LxXv/animation.gif)
 
